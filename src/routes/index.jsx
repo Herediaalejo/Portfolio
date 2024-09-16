@@ -18,13 +18,21 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="home" />, // Redirección a /gerente/empleados
+        element: <Navigate to="home" />,
       },
       {
         path: "home",
         element: <Home />,
       },
+      {
+        path: "*",
+        element: <Navigate to="/portfolio/home" />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/portfolio/home" />,
   },
 ]);
 
