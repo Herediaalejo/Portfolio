@@ -1,0 +1,113 @@
+.projectCard {
+  width: 45%;
+  background: var(--card-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px var(--card-shadow-color);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard.visible {
+  animation: fadeIn 0.8s ease-out forwards; /* Aplica el fade in cuando se vuelve visible */
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--card-shadow-color),
+    inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.projectCard h2 {
+  font-size: 1.9rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header figure {
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header figure img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: 0.4s ease-in-out transform;
+  object-fit: cover;
+  display: block;
+}
+
+.projectCard:hover .header figure img {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0 0 1rem 0;
+  border-bottom: 2px solid gray;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  background-color: #d6d6d6;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 8px;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: 450;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .projectCard {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .projectCard {
+    width: 100%;
+    height: auto;
+  }
+}

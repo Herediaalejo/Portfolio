@@ -1,0 +1,22 @@
+.projectsContainer {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.projectsContainer h2 {
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.projectsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}

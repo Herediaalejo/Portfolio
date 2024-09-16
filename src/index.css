@@ -1,0 +1,35 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: black;
+  --subtitule-color: rgb(60, 132, 255);
+  --navbar-color: rgba(190, 190, 190, 0.8);
+  --navbar-text-color: rgb(0, 0, 0);
+  --card-color: #f9f9f9;
+  --card-shadow-color: #101010;
+  --arrow-color: rgb(255, 153, 69);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: "SUSE";
+}
+
+body.dark-mode {
+  --background-color: rgb(26, 26, 26);
+  --text-color: white;
+  --subtitule-color: rgb(118, 255, 118);
+  --navbar-color: rgba(79, 79, 79, 0.8);
+  --navbar-text-color: rgb(255, 255, 255);
+  --card-color: #2c2c2c;
+  --card-shadow-color: #909090;
+  --arrow-color: rgb(255, 237, 104);
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}

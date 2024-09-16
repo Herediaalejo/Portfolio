@@ -1,0 +1,11 @@
+.mainContainer {
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media ((max-width: 1200px) or (max-height: 800px)) {
+  .mainContainer {
+    max-width: 95%;
+  }
+}
