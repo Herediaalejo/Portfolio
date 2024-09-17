@@ -28,8 +28,14 @@ body.dark-mode {
   --arrow-color: rgb(255, 237, 104);
 }
 
-@media (max-width: 1000px) {
+@media ((max-width: 1000px) or (max-height: 800px)) {
   html {
     font-size: 14px;
+  }
+}
+
+@media ((max-height: 600px)) {
+  html {
+    font-size: 12px;
   }
 }

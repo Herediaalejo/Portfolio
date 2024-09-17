@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media ((max-width: 1200px) or (max-height: 800px)) {
+@media ((max-width: 1200px)) {
   .mainContainer {
     max-width: 95%;
   }

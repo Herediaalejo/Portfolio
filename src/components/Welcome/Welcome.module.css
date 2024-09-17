@@ -1,5 +1,5 @@
 .welcomeContainer {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
 
 .avatar {
   width: 22rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
   float: right;
   shape-outside: circle(50%);
   box-shadow: 0 0 5px var(--text-color);
@@ -91,9 +91,9 @@
   }
 }
 
-@media (max-width: 1550px) {
+@media ((max-width: 1550px) or (max-height: 700px)) {
   .title {
-    margin-top: 5vh;
+    margin-top: 5rem;
     font-size: 3.5rem;
     margin-right: 0;
   }
@@ -111,9 +111,13 @@
   .welcomeContainer {
     margin-top: 2rem;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
-@media ((max-width: 1200px) or (max-height: 800px)) {
+@media ((max-width: 1200px)) {
   .avatar {
     float: none;
   }
@@ -140,9 +144,5 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-
-  .arrow {
-    display: none;
   }
 }
