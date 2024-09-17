@@ -101,6 +101,10 @@
   .subtitle {
     font-size: 2rem;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -110,10 +114,6 @@
 
   .welcomeContainer {
     margin-top: 2rem;
-  }
-
-  .arrow {
-    display: none;
   }
 }
 
