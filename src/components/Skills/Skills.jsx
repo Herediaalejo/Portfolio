@@ -1,4 +1,5 @@
 import styles from "./Skills.module.css";
+import IconAngular from "../Icons/Angular";
 import IconHtml from "../Icons/Html";
 import IconCss from "../Icons/Css";
 import IconJs from "../Icons/JavaScript";
@@ -22,6 +23,7 @@ const Skills = () => {
         <IconPython />
         <IconJava />
         <IconReact />
+        <IconAngular />
         <IconNest />
         <IconNode />
         <IconMySql />
